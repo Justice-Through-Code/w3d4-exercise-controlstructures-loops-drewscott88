@@ -21,8 +21,8 @@ def favorite_activities():
     favorite_activity_list = []
 
     for day in days:
-        favorite_activity = input(f"What is your favorite thing to do on {day}? ")
-        print(f"On {day}, your favorite activity is: {favorite_activity}")
+        favorite_activity = input(f"What is your favorite thing to do on {day}?")
+        
 
     # We should keep track of the user's favorite things to do so that we can print them out all together.
     # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
@@ -31,7 +31,8 @@ def favorite_activities():
     # 2.3 TODO: Now, back in your for loop, append each of the user's answers into your new list.
     # AFTER your loop, print out the list to check if it got populated correctly.
         favorite_activity_list.append(favorite_activity)
-        print(favorite_activity_list)
+    
+    print(favorite_activity_list)
 
     # 2.4: After the code you've written so far, let's create a new for loop.
     # As an example, let's say the user's favorite thing to do on Mondays is plan their week.
@@ -42,9 +43,8 @@ def favorite_activities():
     # Each time through this new loop, use the index number to index into each of your lists for the data
     # you need to print out.
     for i in range(len(days)):
-        day = days[i]
-        activity = favorite_activity_list[i]
-        print(f'On {day}, your favorite activity is {activity}.')
+        
+        print(f'On {days[i]}s, your favorite activity is to {favorite_activity_list[i]}.')
 # favorite_activities()
 '''
     Take a look back at the code you just wrote. Look at how much it does!
@@ -87,8 +87,8 @@ def temp_by_day_continuous():
     # hit control + C to stop the program. No harm has been done to your computer.
     today = int(input('What is the temperature today?'))
     while today <=65:
-        print('Wear a sweater.')
+        print('Wear a sweater')
         today = int(input('What is the temperature today?'))
-    print('Spring has sprung.')
+    print('Spring has sprung!')
 
 # temp_by_day_continuous()
